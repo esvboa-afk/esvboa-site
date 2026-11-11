@@ -1,0 +1,33 @@
+---
+title: Events
+slug: events
+description: ESVBOA meetings, clinics, training, and social events for the 2026/27 season.
+---
+<div class="page-head">
+  <div class="wrap">
+    <h1>Events</h1>
+    <p>Meetings, clinics, training, and social events for 2026/27.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="subscribe">
+      <p><strong>Add the schedule to your phone.</strong></p>
+      <p>Subscribe to the <a href="/events.ics">ESVBOA calendar</a> in Apple Calendar, Google Calendar, or Outlook and new events appear on their own. Copy the link address of that link when your calendar app asks for a URL.</p>
+    </div>
+
+    <h2>Upcoming</h2>
+    <div class="event-list" id="upcoming">
+{{upcoming_events}}
+    </div>
+    <p id="no-upcoming"{{no_upcoming_hidden}}>No upcoming events are listed right now. Check back soon or email <a href="mailto:{{site.email}}">{{site.email}}</a>.</p>
+
+    <details class="past" id="past"{{past_hidden}}>
+      <summary>Past events</summary>
+      <div class="event-list" id="past-list">
+{{past_events}}
+      </div>
+    </details>
+  </div>
+</section>

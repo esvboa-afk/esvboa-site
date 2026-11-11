@@ -1,0 +1,35 @@
+# Render Blueprint for the ESVBOA static site.
+# Connect the GitHub repo in Render (New > Blueprint) and it picks this up.
+services:
+  - type: web
+    runtime: static
+    name: esvboa
+    buildCommand: node build.mjs
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: true
+
+    # Old Wix URLs that changed. Pages that kept their Wix slug need no entry.
+    routes:
+      - type: redirect
+        source: /event-list
+        destination: /events/
+      - type: redirect
+        source: /copy-of-learn
+        destination: /learn/#ilearn
+
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=86400
+      - path: /css/*
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /js/*
+        name: Cache-Control
+        value: public, max-age=3600
