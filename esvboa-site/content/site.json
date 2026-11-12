@@ -1,0 +1,26 @@
+{
+  "name": "ESVBOA",
+  "fullName": "East Side Volleyball Officials Association",
+  "tagline": "An approved MHSAA association",
+  "url": "https://www.esvboa.org",
+  "email": "esvboa@gmail.com",
+  "logo": "/images/logo.jpg",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Become an official", "href": "/become-an-official/" },
+    { "label": "Events", "href": "/events/" },
+    { "label": "Learn", "href": "/learn/" },
+    { "label": "About", "href": "/about-us/" },
+    { "label": "Links", "href": "/links/" }
+  ],
+  "links": {
+    "facebook": "https://www.facebook.com/groups/esvboa",
+    "membership_form": "https://docs.google.com/forms/d/e/1FAIpQLSfNFwOWdPhwu4SnPvwIAWRQl1tAFF_HuC4yn3PsvtE5XLUoDA/viewform?usp=header",
+    "bylaws": "https://docs.google.com/document/d/e/2PACX-1vRwsLIdJ296lUS7nFUy1Qwz4tb8SWie9ZNtQ-S0YsXJe55bOoCAeBC_emquCWIRY91z76Jg0JhJOrPV/pub",
+    "new_officials_presentation": "https://drive.google.com/file/d/1IxrluLoYTSlBkJ-Q1ZSlPWwL3k0C2NlX/view?usp=drive_link",
+    "uniform_guide": "https://docs.google.com/document/d/e/2PACX-1vRUSqs5Dk6NoBpf5rC8fgbk_Ql6mg79RrVGJ1ZopJ66o3zkdvHo1WhixmElm5HtC1G-6rzh3RDDMzVg/pub",
+    "assigners": "https://docs.google.com/document/d/e/2PACX-1vTUhUIVUCz_B9TVvLXv4YXTifHJvCwlI1Uk8oIRaCR0tOTVQzfqkYwQbk5lQnYItKd4WyzPqva_KI6e/pub",
+    "mhsaa_registration": "https://www.mhsaa.com/i-am/officials/officials-registration-information",
+    "officials_guidebook": "https://my.mhsaa.com/portals/0/documents/officials/offguide.pdf"
+  }
+}
