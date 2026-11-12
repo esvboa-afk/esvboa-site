@@ -195,6 +195,18 @@ details.past { margin-top: 2.5rem; }
 details.past[hidden] { display: none; }
 details.past summary { font: 800 1.6rem var(--font-head); cursor: pointer; margin-bottom: 1rem; }
 
+/* ---------- board / people ---------- */
+.people { list-style: none; margin: 0; padding: 0; max-width: none; display: grid; gap: 0 3rem; }
+.people li { border-top: 1px solid var(--ink); padding: 1.3rem 0 1.1rem; display: grid; grid-template-columns: 5.5rem 1fr; gap: 0 1.1rem; align-items: start; }
+@media (min-width: 40rem) { .people li { grid-template-columns: 7.5rem 1fr; gap: 0 1.4rem; } }
+.person-photo { width: 100%; aspect-ratio: 1; object-fit: cover; border: 3px solid var(--ink); display: block; background: var(--green-wash); }
+/* No photo yet: initials tile in the same box, so rows stay aligned. */
+.person-initials { display: flex; align-items: center; justify-content: center; background: var(--ink); color: var(--yellow); font: 800 clamp(1.8rem, 6vw, 2.6rem) var(--font-head); letter-spacing: 0.03em; }
+.people h3 { margin: 0 0 0.15rem; }
+.people .role { font-weight: 700; color: var(--green-deep); margin-bottom: 0.6rem; }
+.people .quote { font-style: italic; color: var(--grey); margin-bottom: 0; }
+@media (min-width: 52rem) { .people { grid-template-columns: 1fr 1fr; } }
+
 /* ---------- notices ---------- */
 .todo { border: 3px dashed var(--ink); background: #fff8d0; padding: 1rem 1.2rem; max-width: 42rem; }
 .todo p { margin: 0; }

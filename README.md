@@ -19,6 +19,7 @@ npm run build      # build only (output in dist/)
 | Page text                   | `src/pages/<page>.html`                |
 | Header, footer, `<head>`    | `src/layout.html`                      |
 | Colors, fonts, spacing      | `static/css/styles.css` (tokens at the top) |
+| Board photos                | `static/images/board/` (320x320 JPG), referenced in `src/pages/esvboa-board.html`; a member without a photo shows an initials tile |
 | Logo                        | replace `static/images/logo.jpg`       |
 | Michigan outline and Detroit star in the home hero | replace `static/images/michigan-outline.svg` (hand-plotted; the star is the `metro-detroit` shape in that file; hidden on phones) |
 
